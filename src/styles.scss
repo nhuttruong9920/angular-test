@@ -1,1 +1,5 @@
-/* You can add global styles to this file, and also import other style files */
+@import "assets/fonts/fa-pro-6.2.1/css/all.min.css";
+@import "../node_modules/primeflex/primeflex.scss";
+:root {
+  --primary-color: #0d6efd;
+}

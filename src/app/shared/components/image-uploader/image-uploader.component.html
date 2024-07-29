@@ -1,0 +1,9 @@
+<div
+  class="uploader flex justify-content-center align-items-center  cursor-pointer border-round-md transition-duration-300 border-1 border-dashed"
+  ondragover="return false;" [class.loaded]="loaded" [style.outlineColor]="dragging ? activeColor : baseColor"
+  (dragenter)="handleDragEnter()" (dragleave)="handleDragLeave()" (drop)="handleDrop($event)"
+  (click)="fileInput.click()">
+  <i class="fas fa-image text-8xl pointer-events-none transition-duration-300 hover:text-primary" [style.color]="dragging
+            ? activeColor : overlayColor"></i>
+  <input class="hidden" #fileInput type="file" name="file" accept="image/*" (change)="handleInputChange($event)">
+</div>
